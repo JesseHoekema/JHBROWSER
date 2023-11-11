@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Example</title>
+    <script>
+        // JavaScript om het schermformaat te detecteren en door te verwijzen
+        function redirectToCorrectPage() {
+            if (window.innerWidth <= 768) {
+                // Mobiel of tablet formaat
+                window.location.href = 'phone.html';
+            } else {
+                // Desktop formaat
+                window.location.href = 'desktop.html';
+            }
+        }
+
+        // Roep de functie op bij het laden van de pagina
+        window.onload = redirectToCorrectPage;
+    </script>
+</head>
+<body>
+    <!-- Inhoud van je pagina -->
+    <h1>Welkom op de website</h1>
+</body>
+</html>
