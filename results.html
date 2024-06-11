@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JHBROWSER- Search Results</title>
+    <link rel="stylesheet" href="/styles/results.css">
+    <link rel="stylesheet" href="/styles/cse.css">
+    <link rel="shortcut icon" href="/assets/logonormal.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html"><img src="assets/logofullwhite.png" class="logo"></a>
+        <a href="index.html"><img src="assets/logonormal.png" class="logo-small"></a>
+        <div class="search-form">
+            <form id="searchForm" method="get" action="results.html" class="search-form">
+                <input type="hidden" name="cx" value="841e5da3551984bd8">
+                <div class="search-bar">
+                    <input id="searchInput" type="text" name="q" autofocus placeholder="Type To Search">
+                    <img src="assets/search.png" class="search-icon" id="searchIcon">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="results">
+        <script async src="https://cse.google.com/cse.js?cx=07766fd6855dc40af"></script>
+        <div class="gcse-searchresults-only"></div>
+    </div>
+</body>
+<script src="/scripts/search.js"></script>
+<script src="/scripts/placeholdersearch.js"></script>
+</html>

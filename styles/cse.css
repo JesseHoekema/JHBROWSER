@@ -1,0 +1,96 @@
+.results {
+    width: 100%;
+}
+
+.gsc-result-info {
+    display: none !important;
+}
+/* Verberg de sorteeroptie */
+.gsc-orderby-container {
+    display: none !important;
+}
+*,
+*::before,
+*::after {
+    border: none !important;
+    box-shadow: none !important;
+}
+.gs-spelling, .gs-result {
+    color: white !important;
+}
+
+.gs-title {
+    font-family: 'roboto' !important;
+}
+
+.gs-title:hover {
+    text-decoration: underline !important;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, span, div, li, a, input, button, textarea, .gs-title {
+    font-size: calc(100% + 0.4px);
+}
+/* Nieuwe regels toegevoegd om borders te verbergen */
+.gsc-control-cse,
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-thumbnail-inside,
+.gsc-thumbnail-inside,
+.gs-result .gs-title .gs-title, 
+.gsc-control-cse .gsc-table-cell-thumbnail {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.gsc-result .gsc-thumbnail,
+.gsc-result .gsc-thumbnail-inside,
+.gsc-control-cse .gsc-results .gsc-thumbnail-inside {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.gsc-result .gs-visibleUrl-long, 
+.gsc-control-cse .gsc-results .gsc-url-top, 
+.gsc-control-cse .gsc-url-bottom {
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Stijl voor de "Web" en "Afbeelding" knoppen */
+.gsc-tabHeader.gsc-tabhActive, 
+.gsc-tabHeader.gsc-tabHeader:first-of-type, 
+.gsc-tabHeader.gsc-tabHeader:nth-of-type(2) {
+    display: inline-block !important;
+    background-color: transparent; /* Achtergrondkleur */
+    color: white; /* Tekstkleur */
+    padding: 5px 10px; /* Binnenruimte */
+    border-radius: 5px; /* Afgeronde hoeken */
+    border: 1px solid #555; /* Rand */
+    margin-right: 10px; /* Ruimte tussen de knoppen */
+    text-decoration: none; /* Geen onderstreping */
+    font-family: 'Roboto', sans-serif; /* Lettertype */
+    font-size: 16px; /* Tekengrootte */
+}
+
+.gsc-tabHeader.gsc-tabhActive {
+    color: blue; /* Andere achtergrondkleur voor actieve tab */
+}
+.gsc-tabHeader.gsc-tabHeader:first-of-type:hover,
+.gsc-tabHeader.gsc-tabHeader:nth-of-type(2):hover {
+    text-decoration: underline;
+    cursor: pointer; /* Cursor verandert naar pointer bij hover */
+}
+@media screen and (max-width: 590px) {
+    .gsc-tabHeader.gsc-tabhActive, 
+.gsc-tabHeader.gsc-tabHeader:first-of-type, 
+.gsc-tabHeader.gsc-tabHeader:nth-of-type(2) {
+    display: inline-block !important;
+    background-color: transparent; /* Achtergrondkleur */
+    color: white; /* Tekstkleur */
+    border-radius: 5px; /* Afgeronde hoeken */
+    border: 1px solid #555; /* Rand */
+    margin-right: 10px; /* Ruimte tussen de knoppen */
+    text-decoration: none; /* Geen onderstreping */
+    font-family: 'Roboto', sans-serif; /* Lettertype */
+    font-size: 16px; /* Tekengrootte */
+}
+
+}
